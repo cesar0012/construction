@@ -56,7 +56,12 @@
     d.body.style.position = '';
     d.body.style.top = '';
     d.body.style.width = '';
-    window.scrollTo(0, parseInt(d.body.dataset.scrollY || '0', 10));
+    var ry = parseInt(d.body.dataset.scrollY || '0', 10);
+    var htmlEl = d.documentElement;
+    var prevSb = htmlEl.style.scrollBehavior;
+    htmlEl.style.scrollBehavior = 'auto'; // evita el "scroll fantasma" animado
+    window.scrollTo(0, ry);
+    htmlEl.style.scrollBehavior = prevSb;
     navToggle && navToggle.setAttribute('aria-expanded', 'false');
     drawer.querySelectorAll('details[open]').forEach(function (det) { det.removeAttribute('open'); });
     lastFocus && lastFocus.focus();
@@ -198,7 +203,12 @@
       d.body.style.position = '';
       d.body.style.top = '';
       d.body.style.width = '';
-      window.scrollTo(0, parseInt(d.body.dataset.scrollY || '0', 10));
+      var ry = parseInt(d.body.dataset.scrollY || '0', 10);
+      var htmlEl = d.documentElement;
+      var prevSb = htmlEl.style.scrollBehavior;
+      htmlEl.style.scrollBehavior = 'auto';
+      window.scrollTo(0, ry);
+      htmlEl.style.scrollBehavior = prevSb;
       lbOpener && lbOpener.focus();
     };
     var moveLb = function (delta) {
@@ -335,6 +345,20 @@
     };
     setMode();
     window.addEventListener('resize', setMode);
+    // indicación de swipe: empujoncito una sola vez cuando la sección entra en vista
+    var nudge = function () {
+      if (prefersReduced || track.scrollLeft > 20) return;
+      track.scrollBy({ left: 110, behavior: 'smooth' });
+      setTimeout(function () { track.scrollBy({ left: -110, behavior: 'smooth' }); }, 480);
+    };
+    if (hs.classList.contains('hs-static') && 'IntersectionObserver' in window) {
+      var ioNudge = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { nudge(); ioNudge.disconnect(); }
+        });
+      }, { threshold: 0.35 });
+      ioNudge.observe(hs);
+    }
   }
 
   /* ---------- Back to top ---------- */
