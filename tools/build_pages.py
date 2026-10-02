@@ -17,7 +17,7 @@ BASE = "https://roquegeneralconstruction.com"
 
 TOPBAR = """  <div class="topbar">
     <div class="container topbar__row">
-      <span>📍 Bend, OR — Serving Central Oregon</span>
+      <span class="tb-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Bend, OR — Serving Central Oregon</span>
       <span class="sep" aria-hidden="true">|</span>
       <span>Licensed · Bonded · Insured</span>
     </div>
@@ -98,7 +98,7 @@ DRAWER = """  <div class="drawer" id="drawer" aria-hidden="true">
       </nav>
       <div class="drawer__cta">
         <a class="btn btn--primary" href="/contact">Get a Free Estimate</a>
-        <a class="btn btn--ghost" href="tel:+15414100664">📞 (541) 410-0664</a>
+        <a class="btn btn--ghost" href="tel:+15414100664"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>(541) 410-0664</a>
         <p class="drawer__meta">Bend, OR · Mon–Fri 7am–6pm, Sat 8am–2pm<br>Licensed · Bonded · Insured</p>
       </div>
     </aside>
@@ -149,7 +149,7 @@ FOOTER = """  <footer class="site-footer">
   </footer>
 
   <div class="mobile-cta">
-    <a href="tel:+15414100664">📞 Call Now</a>
+    <a href="tel:+15414100664"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>Call Now</a>
     <a href="/contact">Free Estimate →</a>
   </div>
 
@@ -198,11 +198,11 @@ def page(title, desc, canonical_path, active, main, jsonld, robots="index, follo
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=4">
+  <link rel="stylesheet" href="/css/styles.css?v=5">
   <script type="application/ld+json">
 {json.dumps(jsonld, indent=2, ensure_ascii=False)}
   </script>
-  <script src="/js/main.js?v=4" defer></script>
+  <script src="/js/main.js?v=5" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -284,7 +284,7 @@ CTA_BAND = """    <div class="hazard" aria-hidden="true"></div>
         <p>Free, itemized estimates — usually within 48 hours. One call covers siding, framing, roofing repairs, demolition and junk removal.</p>
         <div class="cta-band__actions">
           <a class="btn btn--primary" href="/contact">Get My Free Estimate <span class="btn-arrow">→</span></a>
-          <a class="btn btn--ghost" href="tel:+15414100664">📞 (541) 410-0664</a>
+          <a class="btn btn--ghost" href="tel:+15414100664"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>(541) 410-0664</a>
         </div>
       </div>
     </section>"""
@@ -684,7 +684,7 @@ about_main = """    <section class="page-hero">
           <p class="lead">Based in Bend, on the road every week across Central Oregon — Redmond, Sisters, Tumalo, Terrebonne, Prineville, La Pine, Sunriver, Powell Butte, Madras and Crooked River Ranch.</p>
           <p>Residential or light commercial, single repair to full envelope — if it's siding, framing, roofing, demo or debris, it's one call to RGC. <em>Se habla español.</em></p>
           <div class="area-chips" style="margin-top:1rem">
-            <span class="chip chip--hot">📍 Bend</span><span class="chip">Redmond</span><span class="chip">Sisters</span><span class="chip">Prineville</span><span class="chip">La Pine</span><span class="chip">Madras</span>
+            <span class="chip chip--hot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Bend</span><span class="chip">Redmond</span><span class="chip">Sisters</span><span class="chip">Prineville</span><span class="chip">La Pine</span><span class="chip">Madras</span>
           </div>
         </div>
       </div>

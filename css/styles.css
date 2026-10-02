@@ -166,6 +166,8 @@ ul,ol{margin:0 0 1em;padding-left:1.2em}
 .topbar a{color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem}
 .topbar a:hover{text-decoration:underline}
 .topbar .sep{opacity:.55}
+.topbar .tb-item{display:inline-flex;align-items:center;gap:.45rem}
+.topbar .tb-item svg{flex:none}
 .topbar svg{flex:none}
 @media (max-width:640px){.topbar__row{gap:.7rem;font-size:.76rem}}
 
