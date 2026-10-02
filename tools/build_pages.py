@@ -198,11 +198,11 @@ def page(title, desc, canonical_path, active, main, jsonld, robots="index, follo
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=3">
+  <link rel="stylesheet" href="/css/styles.css?v=4">
   <script type="application/ld+json">
 {json.dumps(jsonld, indent=2, ensure_ascii=False)}
   </script>
-  <script src="/js/main.js?v=3" defer></script>
+  <script src="/js/main.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -273,7 +273,8 @@ def service_schema(name, desc, url_path):
         ],
     }
 
-CTA_BAND = """    <section class="cta-band">
+CTA_BAND = """    <div class="hazard" aria-hidden="true"></div>
+    <section class="cta-band">
       <div class="cta-band__bg" aria-hidden="true">
         <img src="/img/photos/bend-lake.webp" alt="" loading="lazy" width="1600" height="1067">
       </div>

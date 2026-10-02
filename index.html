@@ -42,7 +42,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=3">
+  <link rel="stylesheet" href="/css/styles.css?v=4">
   <link rel="preload" as="image" href="/img/photos/hero-framing.webp" fetchpriority="high">
 
   <!-- Datos estructurados -->
@@ -159,7 +159,7 @@
   }
   </script>
 
-  <script src="/js/main.js?v=3" defer></script>
+  <script src="/js/main.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -273,6 +273,14 @@
         </ul>
       </div>
     </section>
+
+    <!-- TICKER DE OFICIOS -->
+    <div class="trade-ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Siding</span><span>Framing</span><span>Roofing Repairs</span><span>Demolition</span><span>Junk Removal</span><span>Free Estimates</span><span>Bend &amp; Central Oregon</span>
+        <span>Siding</span><span>Framing</span><span>Roofing Repairs</span><span>Demolition</span><span>Junk Removal</span><span>Free Estimates</span><span>Bend &amp; Central Oregon</span>
+      </div>
+    </div>
 
     <!-- TRUSTBAR -->
     <section class="trustbar" aria-label="Why homeowners trust us">
@@ -440,29 +448,44 @@
       </div>
     </section>
 
-    <!-- GALERÍA PREVIEW -->
-    <section class="section section--paper2 section--tight">
-      <div class="container">
-        <div style="display:flex;flex-wrap:wrap;gap:1rem;align-items:end;justify-content:space-between;margin-bottom:1.6rem">
-          <div>
-            <p class="eyebrow">Recent work</p>
-            <h2 class="headline-mark">The craft, up close</h2>
-          </div>
-          <a class="btn btn--dark" href="/gallery">View full gallery <span class="btn-arrow">→</span></a>
+    <!-- TRABAJO: SCROLL HORIZONTAL PILOTEADO -->
+    <section class="hscroll" id="work">
+      <div class="hscroll__sticky">
+        <div class="hscroll__inner">
+          <p class="eyebrow">Recent work</p>
+          <h2 class="headline-mark">The craft, up close</h2>
+          <p class="lead">Keep scrolling — the work moves with you.</p>
         </div>
-        <div class="gallery-grid">
-          <button class="gitem reveal" type="button" aria-label="Open gallery">
-            <img src="/img/photos/siding-detail-640.webp" alt="Detail of new fiber cement siding corners and trim on a finished home" loading="lazy" width="680" height="576">
-            <figcaption>Siding + Roofing combo <span class="tag">Exterior</span></figcaption>
-          </button>
-          <button class="gitem reveal reveal-d1" type="button" aria-label="Open gallery">
-            <img src="/img/photos/roofing-detail-640.webp" alt="Roofer fastening panels during a roof repair" loading="lazy" width="680" height="498">
-            <figcaption>Roof repair in progress <span class="tag">Roofing</span></figcaption>
-          </button>
-          <button class="gitem reveal reveal-d2" type="button" aria-label="Open gallery">
-            <img src="/img/photos/demolition-swing-640.webp" alt="Excavator arm swinging through a controlled teardown" loading="lazy" width="680" height="522">
-            <figcaption>Structure teardown <span class="tag">Demolition</span></figcaption>
-          </button>
+        <div class="hscroll__track">
+          <figure class="hp">
+            <span class="hp__num" aria-hidden="true">01</span>
+            <img src="/img/photos/siding-detail.webp" alt="Close-up of new fiber cement siding and crisp corner trim" loading="lazy" width="920" height="780">
+            <figcaption><b>Siding, up close</b><span class="hp__tag">Siding</span></figcaption>
+          </figure>
+          <figure class="hp">
+            <span class="hp__num" aria-hidden="true">02</span>
+            <img src="/img/photos/framing-aerial.webp" alt="Aerial view of new wooden roof trusses framed on a residential build" loading="lazy" width="1220" height="1101">
+            <figcaption><b>Framed true &amp; square</b><span class="hp__tag">Framing</span></figcaption>
+          </figure>
+          <figure class="hp">
+            <span class="hp__num" aria-hidden="true">03</span>
+            <img src="/img/photos/roofing-detail.webp" alt="Roofer fastening panels during an active roof repair" loading="lazy" width="860" height="630">
+            <figcaption><b>Repairs that hold</b><span class="hp__tag">Roofing</span></figcaption>
+          </figure>
+          <figure class="hp">
+            <span class="hp__num" aria-hidden="true">04</span>
+            <img src="/img/photos/demolition-swing.webp" alt="Excavator arm swinging through a controlled teardown" loading="lazy" width="794" height="610">
+            <figcaption><b>Controlled teardowns</b><span class="hp__tag">Demolition</span></figcaption>
+          </figure>
+          <figure class="hp">
+            <span class="hp__num" aria-hidden="true">05</span>
+            <img src="/img/photos/crew-hivis.webp" alt="RGC crew loading debris — we do the heavy lifting" loading="lazy" width="1024" height="681">
+            <figcaption><b>Heavy lifting included</b><span class="hp__tag">Junk Removal</span></figcaption>
+          </figure>
+          <a class="hp hp--cta" href="/gallery">
+            <b>View the full gallery</b>
+            <span>Open gallery →</span>
+          </a>
         </div>
       </div>
     </section>
@@ -545,6 +568,7 @@
     </section>
 
     <!-- CTA BAND -->
+    <div class="hazard" aria-hidden="true"></div>
     <section class="cta-band">
       <div class="cta-band__bg" aria-hidden="true">
         <img src="/img/photos/bend-sisters.webp" alt="" loading="lazy" width="1600" height="1067">

@@ -304,6 +304,39 @@
     });
   }
 
+  /* ---------- Scroll horizontal piloteado ---------- */
+  var hs = d.querySelector('.hscroll');
+  if (hs) {
+    var track = hs.querySelector('.hscroll__track');
+    var hsPinned = false;
+    var hsApply = function () {
+      var rect = hs.getBoundingClientRect();
+      var total = hs.offsetHeight - window.innerHeight;
+      var progress = total > 0 ? Math.min(Math.max(-rect.top / total, 0), 1) : 0;
+      var dist = track.scrollWidth - window.innerWidth;
+      track.style.transform = 'translate3d(' + (-progress * dist).toFixed(1) + 'px,0,0)';
+    };
+    var setMode = function () {
+      var wantPinned = !prefersReduced && window.matchMedia('(min-width: 861px)').matches;
+      if (wantPinned && !hsPinned) {
+        hsPinned = true;
+        hs.classList.remove('hs-static');
+        window.addEventListener('scroll', hsApply, { passive: true });
+        window.addEventListener('resize', hsApply);
+      } else if (!wantPinned && hsPinned) {
+        hsPinned = false;
+        hs.classList.add('hs-static');
+        track.style.transform = '';
+        window.removeEventListener('scroll', hsApply);
+        window.removeEventListener('resize', hsApply);
+      } else if (wantPinned) {
+        hsApply();
+      }
+    };
+    setMode();
+    window.addEventListener('resize', setMode);
+  }
+
   /* ---------- Back to top ---------- */
   var backTop = d.querySelector('.back-top');
   if (backTop) {
