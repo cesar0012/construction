@@ -8,6 +8,7 @@ COPY services ./services
 COPY css ./css
 COPY js ./js
 COPY img ./img
+COPY videos ./videos
 COPY favicon.ico favicon.svg site.webmanifest robots.txt sitemap.xml ./
 
 ENV PORT=8080

@@ -80,7 +80,7 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_header("Cache-Control", "no-store")
             self.send_header("X-Robots-Tag", "noindex, nofollow")
         else:
-            if ext in (".css", ".js", ".webp", ".png", ".jpg", ".jpeg", ".svg", ".ico", ".woff2"):
+            if ext in (".css", ".js", ".webp", ".png", ".jpg", ".jpeg", ".svg", ".ico", ".woff2", ".mp4", ".webm"):
                 self.send_header("Cache-Control", "public, max-age=604800")
             else:
                 self.send_header("Cache-Control", "public, max-age=300")

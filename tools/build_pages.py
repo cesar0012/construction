@@ -19,8 +19,6 @@ TOPBAR = """  <div class="topbar">
     <div class="container topbar__row">
       <span>📍 Bend, OR — Serving Central Oregon</span>
       <span class="sep" aria-hidden="true">|</span>
-      <a href="tel:+15414100664">📞 (541) 410-0664</a>
-      <span class="sep" aria-hidden="true">|</span>
       <span>Licensed · Bonded · Insured</span>
     </div>
   </div>
@@ -57,7 +55,6 @@ def header(active=""):
             </details>
           </li>
           <li><a href="/gallery"{cur("gallery")}>Gallery</a></li>
-          <li><a href="/contact"{cur("contact")}>Contact</a></li>
         </ul>
       </nav>
       <div class="header__cta">
@@ -97,7 +94,6 @@ DRAWER = """  <div class="drawer" id="drawer" aria-hidden="true">
             </details>
           </li>
           <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
       <div class="drawer__cta">
@@ -113,7 +109,7 @@ FOOTER = """  <footer class="site-footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="/img/logo-wide.png" alt="RGC — Roque General Construction LLC" loading="lazy" width="200" height="153">
+          <img src="/img/logo-wide.png" alt="RGC — Roque General Construction LLC" loading="lazy" width="200" height="150">
           <p>One crew for siding, framing, roofing repairs, demolition and junk removal. Licensed, bonded &amp; insured — proud to call Central Oregon home. <em>Se habla español.</em></p>
         </div>
         <div class="footer__col">
@@ -202,11 +198,11 @@ def page(title, desc, canonical_path, active, main, jsonld, robots="index, follo
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=2">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
   <script type="application/ld+json">
 {json.dumps(jsonld, indent=2, ensure_ascii=False)}
   </script>
-  <script src="/js/main.js?v=2" defer></script>
+  <script src="/js/main.js?v=3" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>

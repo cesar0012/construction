@@ -42,7 +42,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=2">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
   <link rel="preload" as="image" href="/img/photos/hero-framing.webp" fetchpriority="high">
 
   <!-- Datos estructurados -->
@@ -159,7 +159,7 @@
   }
   </script>
 
-  <script src="/js/main.js?v=2" defer></script>
+  <script src="/js/main.js?v=3" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -168,8 +168,6 @@
   <div class="topbar">
     <div class="container topbar__row">
       <span>📍 Bend, OR — Serving Central Oregon</span>
-      <span class="sep" aria-hidden="true">|</span>
-      <a href="tel:+15414100664">📞 (541) 410-0664</a>
       <span class="sep" aria-hidden="true">|</span>
       <span>Licensed · Bonded · Insured</span>
     </div>
@@ -203,7 +201,6 @@
             </details>
           </li>
           <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
       <div class="header__cta">
@@ -243,7 +240,6 @@
             </details>
           </li>
           <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
       <div class="drawer__cta">
@@ -256,33 +252,25 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <span class="plate">Licensed · Bonded · Insured — Bend, OR</span>
-          <h1>Siding, Framing &amp; <span class="accent">Roofing Repairs</span> Done Right</h1>
-          <p class="hero__sub">Roque General Construction is Central Oregon's one-call crew for siding, framing, roofing repairs, demolition and junk removal — with straight quotes, clean job sites and work we stand behind.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="/contact">Get a Free Estimate <span class="btn-arrow">→</span></a>
-            <a class="btn btn--ghost" href="tel:+15414100664">📞 (541) 410-0664</a>
-          </div>
-          <ul class="hero__badges">
-            <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 12.5 2 8l1.4-1.4 3.1 3.1L13.6 2.7 15 4.1z"/></svg> Free estimates</li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 12.5 2 8l1.4-1.4 3.1 3.1L13.6 2.7 15 4.1z"/></svg> Locally owned</li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 12.5 2 8l1.4-1.4 3.1 3.1L13.6 2.7 15 4.1z"/></svg> Residential &amp; commercial</li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 12.5 2 8l1.4-1.4 3.1 3.1L13.6 2.7 15 4.1z"/></svg> Se habla español</li>
-          </ul>
+    <section class="hero hero--video">
+      <video class="hero__bg" autoplay muted loop playsinline preload="metadata" poster="/img/photos/hero-framing.webp" aria-hidden="true" tabindex="-1">
+        <source src="/videos/hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <span class="plate">Licensed · Bonded · Insured — Bend, OR</span>
+        <h1>Siding, Framing &amp; <span class="accent">Roofing Repairs</span> Done Right</h1>
+        <p class="hero__sub">Roque General Construction is Central Oregon's one-call crew for siding, framing, roofing repairs, demolition and junk removal — with straight quotes, clean job sites and work we stand behind.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="/contact">Get a Free Estimate <span class="btn-arrow">→</span></a>
+          <a class="btn btn--ghost" href="tel:+15414100664">📞 (541) 410-0664</a>
         </div>
-        <div class="hero__media">
-          <div class="hero__edge" aria-hidden="true"></div>
-          <div class="hero__photo">
-            <img src="/img/photos/hero-framing.webp" alt="Aerial view of a new home roof framed with wooden trusses at a Central Oregon construction site" width="1920" height="1440" fetchpriority="high">
-          </div>
-          <div class="hero__card">
-            <b>5<span style="color:var(--red-bright)">★</span> trades</b>
-            <span>One crew, one call</span>
-          </div>
-        </div>
+        <ul class="hero__badges">
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 12.5 2 8l1.4-1.4 3.1 3.1L13.6 2.7 15 4.1z"/></svg> Free estimates</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 12.5 2 8l1.4-1.4 3.1 3.1L13.6 2.7 15 4.1z"/></svg> Locally owned</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 12.5 2 8l1.4-1.4 3.1 3.1L13.6 2.7 15 4.1z"/></svg> Residential &amp; commercial</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.5 12.5 2 8l1.4-1.4 3.1 3.1L13.6 2.7 15 4.1z"/></svg> Se habla español</li>
+        </ul>
       </div>
     </section>
 
@@ -578,7 +566,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="/img/logo-wide.png" alt="RGC — Roque General Construction LLC" loading="lazy" width="200" height="153">
+          <img src="/img/logo-wide.png" alt="RGC — Roque General Construction LLC" loading="lazy" width="200" height="150">
           <p>One crew for siding, framing, roofing repairs, demolition and junk removal. Licensed, bonded &amp; insured — proud to call Central Oregon home. <em>Se habla español.</em></p>
         </div>
         <div class="footer__col">

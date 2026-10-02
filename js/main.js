@@ -24,6 +24,13 @@
     onScrollHeader();
   }
 
+  /* ---------- Hero video: pausa si prefiere menos movimiento ---------- */
+  var heroVideo = d.querySelector('.hero__bg');
+  if (heroVideo && prefersReduced) {
+    heroVideo.removeAttribute('autoplay');
+    heroVideo.pause();
+  }
+
   /* ---------- Drawer móvil ---------- */
   var drawer = d.getElementById('drawer');
   var navToggle = d.querySelector('.nav-toggle');

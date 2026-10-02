@@ -30,6 +30,7 @@ index.html  about.html  services.html  gallery.html  contact.html  404.html
 services/   siding.html  framing.html  roofing-repairs.html  demolition.html  junk-removal.html
 css/styles.css   js/main.js
 img/             logo, favicons, og-image, photos/ (webp)
+videos/          hero-bg.mp4 (video de fondo del hero, Mixkit Free License)
 server.py        rutas amigables + 301 + modo demo + seguridad
 tools/           build_pages.py (regenera las páginas interiores), cloudflared.exe (no se sube)
 demo.py + demo-server.bat   demo pública para el cliente vía Cloudflare Tunnel

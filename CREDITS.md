@@ -29,5 +29,9 @@ No usadas a propósito (por riesgo de marca de agua / contexto):
 `framing-trusses`, `framing-timber`, `junk-truck` (camión rotulado de otra ciudad),
 `roofing-shingles` (CC-BY, exigía atribución).
 
+Video del hero (`videos/hero-bg.mp4`): [Mixkit](https://mixkit.co/free-stock-video/construction-workers-at-a-house-under-construction-1459/)
+— "Construction workers at a house under construction" (720p, recortado a 12 s, 1280 px, sin audio).
+**Mixkit Free License**: uso comercial gratuito, sin atribución requerida.
+
 Logo, favicons y og-image: generados a partir de los archivos de marca del cliente
 (`Roque-General-Construction-LLC----LOGO---final*.png`, tarjetas 3.5x2 in).
