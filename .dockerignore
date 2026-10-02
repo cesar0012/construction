@@ -1,0 +1,9 @@
+.git
+.gitignore
+tools/
+*.7z
+README.md
+LINEAMIENTOS.md
+CREDITS.md
+demo-url.txt
+__pycache__/
