@@ -167,6 +167,7 @@
   var lightbox = d.getElementById('lightbox');
   if (lightbox) {
     var lbImg = lightbox.querySelector('img');
+    var lbVideo = lightbox.querySelector('.lightbox__video');
     var lbCap = lightbox.querySelector('.lightbox__cap');
     var lbItems = [];
     var lbIndex = 0;
@@ -178,8 +179,22 @@
     var renderLb = function () {
       var it = lbItems[lbIndex];
       if (!it) return;
+      var vid = it.getAttribute('data-video');
+      if (vid) {
+        lbImg.style.display = 'none';
+        lbVideo.style.display = 'block';
+        if (lbVideo.getAttribute('src') !== vid) lbVideo.src = vid;
+        lbVideo.muted = true; // autoplay permitido; el usuario activa sonido desde los controles
+        lbVideo.play().catch(function () {});
+        lbCap.textContent = it.getAttribute('data-caption') || '';
+        return;
+      }
+      lbVideo.pause();
+      lbVideo.removeAttribute('src');
+      lbVideo.style.display = 'none';
       var img = it.querySelector('img');
       var full = it.getAttribute('data-full') || img.currentSrc || img.src;
+      lbImg.style.display = 'block';
       lbImg.src = full;
       lbImg.alt = img.alt || '';
       lbCap.textContent = it.getAttribute('data-caption') || img.alt || '';
@@ -199,6 +214,8 @@
     };
     var closeLb = function () {
       lightbox.classList.remove('open');
+      lbVideo.pause();
+      lbVideo.removeAttribute('src');
       lightbox.querySelector('img').src = '';
       d.body.style.position = '';
       d.body.style.top = '';

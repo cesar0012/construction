@@ -18,7 +18,7 @@ Sitio estático (HTML/CSS/JS vanilla + `server.py`) para **Roque General Constru
 | 3 | **Formulario**: usa FormSubmit hacia `marioroque@yahoo.com`. **El primer envío real genera un correo de activación de FormSubmit** — hay que hacer clic una sola vez para habilitar la entrega. Ver "Formulario" abajo. | `contact.html` |
 | 4 | **Facebook**: la tarjeta dice "VISIT US" con QR a Facebook. Enlazar la URL real de la página cuando el cliente la confirme (se puede añadir a `sameAs` del JSON-LD). | — |
 | 5 | **Testimonios de ejemplo** (Sarah M./Diego R./Kelli T.) — reemplazar por reseñas reales del cliente cuando las tenga. No marcar con schema Review hasta que sean reales. | `index.html` |
-| 6 | **Fotos**: son imágenes representativas CC0 (ver `CREDITS.md`). Sustituir por fotos reales de proyectos del cliente en cuanto las tenga (misma ruta/nombre `img/photos/*.webp`). | `img/photos/` |
+| 6 | ~~Fotos~~ **RESUELTO**: las fotos y videos reales del cliente ya están integrados (v1.8, desde `files/`). Solo quedan 2 paisajes CC0 como fondos de bandas CTA (identidad local). | `img/photos/`, `videos/` |
 | 7 | **Horarios** asumidos L–V 7–6, Sáb 8–2 (la tarjeta no los trae). Confirmar. | footer, contact, JSON-LD `openingHoursSpecification` |
 | 8 | Código postal `97701` asumido para Bend (el cliente no dio dirección). Confirmar o dejar solo localidad. | JSON-LD |
 | 9 | Rangos de precios orientativos por servicio — validarlos con Mario. | páginas de servicio, sección "Ballpark" |
@@ -30,7 +30,7 @@ index.html  about.html  services.html  gallery.html  contact.html  404.html
 services/   siding.html  framing.html  roofing-repairs.html  demolition.html  junk-removal.html
 css/styles.css   js/main.js
 img/             logo, favicons, og-image, photos/ (webp)
-videos/          hero-bg.mp4 (video de fondo del hero, Mixkit Free License)
+videos/          hero-bg.mp4 (video real del cliente), siding-tour.mp4 e interior-tour.mp4 (galería)
 server.py        rutas amigables + 301 + modo demo + seguridad
 tools/           build_pages.py (regenera las páginas interiores), cloudflared.exe (no se sube)
 demo.py + demo-server.bat   demo pública para el cliente vía Cloudflare Tunnel

@@ -637,6 +637,12 @@ body.nav-open .nav-toggle span::after{top:0;transform:rotate(-45deg)}
   aspect-ratio:4/3;
 }
 .gitem img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.gitem video{width:100%;height:100%;object-fit:cover;display:block}
+.gitem .play-badge{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:54px;height:54px;border-radius:50%;background:rgba(238,17,17,.92);
+  display:grid;place-items:center;box-shadow:var(--shadow-red);pointer-events:none;
+}
 .gitem:hover img{transform:scale(1.05)}
 .gitem figcaption{
   position:absolute;inset:auto 0 0 0;padding:2.2rem .95rem .8rem;
@@ -659,6 +665,7 @@ body.nav-open .nav-toggle span::after{top:0;transform:rotate(-45deg)}
 }
 .lightbox.open{display:flex}
 .lightbox img{max-width:min(1080px,94vw);max-height:76vh;border-radius:12px;box-shadow:var(--shadow-2)}
+.lightbox .lightbox__video{display:none;max-width:min(1080px,94vw);max-height:76vh;border-radius:12px;box-shadow:var(--shadow-2);background:#000}
 .lightbox__cap{color:#fff;font-weight:700;margin-top:1rem;text-align:center}
 .lightbox__btn{
   position:absolute;background:rgba(255,255,255,.08);border:1px solid var(--line-dark);

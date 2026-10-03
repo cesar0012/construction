@@ -198,11 +198,11 @@ def page(title, desc, canonical_path, active, main, jsonld, robots="index, follo
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=11">
+  <link rel="stylesheet" href="/css/styles.css?v=13">
   <script type="application/ld+json">
 {json.dumps(jsonld, indent=2, ensure_ascii=False)}
   </script>
-  <script src="/js/main.js?v=11" defer></script>
+  <script src="/js/main.js?v=13" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -422,7 +422,7 @@ SERVICES_DATA = [
         "desc": "Fiber cement, vinyl & wood siding installed and repaired in Bend & Central Oregon. Built for High Desert sun, wind & snow. Free estimates: (541) 410-0664.",
         "h1": "Siding Installation &amp; Repair Built for Central Oregon",
         "lead": "Your siding is your home's armor against High Desert sun, wind, snow and wildfire season. We install and repair fiber cement, vinyl and wood siding with the detail work — flashing, sealing, trim — that makes it last.",
-        "hero_img": "siding-house.webp", "hero_alt": "Home with newly installed blue fiber cement siding, crisp trim and a fresh dark shingle roof", "hero_w": 1600, "hero_h": 1200,
+        "hero_img": "siding-house.webp", "hero_alt": "Completed two-story home with dark lap siding, crisp trim and fresh gutters installed by RGC", "hero_w": 1600, "hero_h": 1200,
         "intro": """<p>Siding does two jobs at once: it defines how your home looks from the street, and it takes the beating so your walls don't. In Central Oregon that beating is real — summer UV at 3,000+ feet, sub-zero snaps, wind-driven snow and decades of freeze-thaw.</p>
         <p>We install complete siding systems and surgically repair failing ones. That means correct house wrap and flashing, panels fastened to manufacturer spec (important for your warranty), and trim details that move with the seasons instead of cracking against them.</p>""",
         "includes": [
@@ -434,7 +434,7 @@ SERVICES_DATA = [
             ("Prep for painting or sale", "Siding repairs and replacements that get a home market-ready fast."),
         ],
         "local": "At this elevation, UV breaks down cheaper vinyl in a few years and freeze-thaw finds every unsealed gap. We spec materials and fastening for High Desert conditions — and we'll tell you honestly when a repair beats a re-side.",
-        "photo2": {"img": "siding-detail.webp", "alt": "Close-up of new fiber cement siding and crisp corner trim on a finished wall", "w": 920, "h": 780},
+        "photo2": {"img": "siding-detail.webp", "alt": "Fresh lap siding gable with black-framed windows installed by our crew", "w": 1200, "h": 1600},
         "why": [
             ("Honest repair-vs-replace advice", "We won't sell you a full re-side when two days of targeted repair solves it."),
             ("Manufacturer-spec installation", "Correct fastening and clearance protect both the material and your warranty."),
@@ -461,7 +461,7 @@ SERVICES_DATA = [
         "desc": "Straight, code-aware framing in Bend & Central Oregon: additions, ADUs, garages, interior walls, decks & structural repairs. Free quote: (541) 410-0664.",
         "h1": "Framing That Everything Else Depends On",
         "lead": "Walls, floors and roofs that are straight, square and built to code — because every finish you see is only as good as the structure you don't. Rough framing, remodels, additions and structural repairs.",
-        "hero_img": "framing-aerial.webp", "hero_alt": "Aerial view of new wooden roof trusses framed on a Central Oregon residential build", "hero_w": 1220, "hero_h": 1101,
+        "hero_img": "framing-aerial.webp", "hero_alt": "Residential build at framing stage with gable roof structure and stone column entry", "hero_w": 1600, "hero_h": 1200,
         "intro": """<p>Framing is where a project wins or loses. A quarter inch out of square at the framing stage becomes a visible wave in the siding, a crack in the drywall and a headache for every tradesperson who follows.</p>
         <p>Our crews frame to plan — or help you shape the plan — with Central Oregon realities in mind: snow loads on roofs and decks, engineered details where spans demand them, and inspectors who expect the job done right the first time.</p>""",
         "includes": [
@@ -473,7 +473,7 @@ SERVICES_DATA = [
             ("Plan-ready precision", "We frame to your architect's plans — and flag conflicts before they become change orders."),
         ],
         "local": "Snow load is not a rounding error here — roof and deck framing in Bend, Sisters or La Pine must account for it. We size members for your zone and handle the permit drawings inspectors expect.",
-        "photo2": {"img": "tools-hammer.webp", "alt": "Contractor's hammer and nails on a workbench — framing details planned before the first cut", "w": 960, "h": 641},
+        "photo2": {"img": "framing-corner.webp", "alt": "Building corner with wall framing, house wrap and lumber staged on site", "w": 1200, "h": 1600},
         "why": [
             ("Square, plumb, on plan", "We check the math before the nails — finishes go in faster when framing is true."),
             ("Snow-load aware engineering", "Members sized for your actual zone, not a national average."),
@@ -500,7 +500,7 @@ SERVICES_DATA = [
         "desc": "Leak detection, shingle & flashing repairs, storm damage fixes and emergency tarping in Bend & Central Oregon. Honest repair-vs-replace advice. Call (541) 410-0664.",
         "h1": "Roofing Repairs Before Small Leaks Get Loud",
         "lead": "A missing shingle is a five-dollar fix today and a five-thousand-dollar ceiling next winter. We find the real source of leaks, repair them properly, and tell you plainly when a patch is — and isn't — enough.",
-        "hero_img": "roofing-worker.webp", "hero_alt": "Roofer securing roofing panels with a hammer on a sloped roof under a warm sky", "hero_w": 1024, "hero_h": 681,
+        "hero_img": "roofing-worker.webp", "hero_alt": "Roof deck with battens and panels staged during an active reroof", "hero_w": 1600, "hero_h": 2133,
         "intro": """<p>Central Oregon roofs work hard: heavy winter snow, spring freeze-thaw, summer UV and the occasional windstorm that lifts shingles like playing cards. Most roofs don't fail all at once — they fail at the details.</p>
         <p>We repair those details: pipe boots, step flashing, valleys, ridge caps and the wind-lifted shingles that start as a nuisance and end as rot. And when a roof is genuinely at the end of its life, we'll say so — with numbers for both paths.</p>""",
         "includes": [
@@ -512,7 +512,7 @@ SERVICES_DATA = [
             ("Vent & boot replacement", "Crumbed pipe boots and failed vents — cheap to fix, costly to ignore."),
         ],
         "local": "Freeze-thaw cycles open every hairline crack, and High Desert UV cooks the oils out of shingles years faster than the label promises. If your roof is past 15 summers, an annual look-over pays for itself.",
-        "photo2": {"img": "roofing-detail.webp", "alt": "Roofer fastening panels during an active roof repair", "w": 860, "h": 630},
+        "photo2": {"img": "roofing-detail.webp", "alt": "Detail of roof battens and underlayment ready for panels", "w": 1200, "h": 1600},
         "why": [
             ("We find the real leak", "Water travels — we inspect the whole path, not just the stain."),
             ("Repair-first philosophy", "If a $600 repair buys you five more years, that's what we'll recommend."),
@@ -539,7 +539,7 @@ SERVICES_DATA = [
         "desc": "Safe, permitted residential demolition in Bend & Central Oregon — sheds, decks, interior gut-outs & full structures. Hauling included. Free quote: (541) 410-0664.",
         "h1": "Demolition Done Safe, Legal &amp; Clean",
         "lead": "Good demolition is controlled, permitted and quiet on your neighbors. From a gutted bathroom to a full structure teardown, we bring the right equipment, handle the permits and haul everything away.",
-        "hero_img": "demolition-excavator.webp", "hero_alt": "Excavator methodically tearing down an old structure at a residential demolition site", "hero_w": 1024, "hero_h": 681,
+        "hero_img": "demolition-excavator.webp", "hero_alt": "Interior gut-out: framing exposed and debris staged for haul-off", "hero_w": 1600, "hero_h": 2133,
         "intro": """<p>Demolition is where many projects actually start — and where an unlicensed crew can create expensive problems: an unmarked gas line, an unpermitted teardown, a dumpster of debris nobody wants to move twice.</p>
         <p>We demo with a plan: utilities located and disconnected, permits in hand, dust controlled, salvageable materials separated, and the site left swept and ready for whatever comes next. Because we frame and re-side too, we demo with the rebuild in mind.</p>""",
         "includes": [
@@ -551,7 +551,7 @@ SERVICES_DATA = [
             ("Site prep for the rebuild", "Backfilled, graded and swept — ready for framing or landscaping."),
         ],
         "local": "Older Central Oregon properties often hide surprises: buried fuel oil tanks, unpermitted additions, asbestos-era materials. We flag those risks during the estimate so there are no mid-demo cost bombs.",
-        "photo2": {"img": "demolition-site.webp", "alt": "Excavator working through rubble and debris on a cleared demolition lot", "w": 1024, "h": 681},
+        "photo2": {"img": "demolition-site.webp", "alt": "Demolition debris separated and staged for disposal on site", "w": 1200, "h": 1600},
         "why": [
             ("Licensed & insured demolition", "This is not a Craigslist crew with a sledgehammer — permits, insurance and process."),
             ("One quote, haul-off included", "No separate dumpster bills, no debris left 'for later'."),
@@ -578,7 +578,7 @@ SERVICES_DATA = [
         "desc": "Fast, careful junk removal in Bend & Central Oregon: garages, yards, appliances, construction debris & cleanouts. Same-week pickup. Call (541) 410-0664.",
         "h1": "Junk Removal That Actually Shows Up",
         "lead": "Garage full, yard buried in branches, renovation debris stacked in the driveway? We load it, sweep up after and take it where it belongs — with recycling and donation before the landfill.",
-        "hero_img": "crew-hivis.webp", "hero_alt": "RGC crew in high-visibility gear loading debris — we do the heavy lifting", "hero_w": 1024, "hero_h": 681,
+        "hero_img": "crew-hivis.webp", "hero_alt": "RGC trailer parked on a Central Oregon job site, ready for haul-off", "hero_w": 1600, "hero_h": 1200,
         "intro": """<p>You shouldn't need to rent a trailer, beg a friend with a truck and spend three weekends on it. Point at the pile — we do the lifting, loading, sweeping and hauling.</p>
         <p>We handle household junk, appliance and furniture removal, yard debris, estate and rental cleanouts, and construction debris from our own job sites or yours. Metals, electronics and reusable goods are routed to recycling and donation partners — the landfill is the last stop, not the first.</p>""",
         "includes": [
@@ -590,7 +590,7 @@ SERVICES_DATA = [
             ("Construction debris", "Job-site scraps hauled and sorted — including debris from your own remodeler."),
         ],
         "local": "Deschutes County landfill and recycling rules change, and some items (paint, chemicals, tires) need special handling. We sort as we load so you don't pay dump penalties — and so reusable goods skip the landfill.",
-        "photo2": {"img": "craft-hands.webp", "alt": "Close-up of work-gloved hands doing careful manual work on site", "w": 960, "h": 540},
+        "photo2": {"img": "demolition-site.webp", "alt": "Debris and junk separated for donation, recycling and disposal", "w": 1200, "h": 1600},
         "why": [
             ("We do all the lifting", "Point at it. That's your whole job."),
             ("Same-week pickup", "Usually within 48 hours; call for same-day availability."),
@@ -638,7 +638,7 @@ about_main = """    <section class="page-hero">
           <a class="btn btn--primary" href="/contact">Talk to Mario about your project <span class="btn-arrow">→</span></a>
         </div>
         <div class="split__media reveal reveal-d1">
-          <img src="/img/photos/crew-hivis.webp" alt="Roque General Construction crew in high-visibility gear collaborating on a build" loading="lazy" width="1024" height="681">
+          <img src="/img/photos/crew-hivis.webp" alt="RGC trailer on a Central Oregon job site" loading="lazy" width="1600" height="1200">
           <span class="plate plate-float">RGC crew</span>
         </div>
       </div>
@@ -676,7 +676,7 @@ about_main = """    <section class="page-hero">
     <section class="section">
       <div class="container split split--rev">
         <div class="split__media reveal">
-          <img src="/img/photos/tools-hammer.webp" alt="Contractor's hammer and nails laid out on a workbench" loading="lazy" width="960" height="641">
+          <img src="/img/photos/project-patio.webp" alt="Completed modern home with fire-pit patio built in Central Oregon" loading="lazy" width="1600" height="1200">
         </div>
         <div class="reveal reveal-d1">
           <p class="eyebrow">Service area</p>
@@ -764,23 +764,23 @@ svc_blocks = [
     ("01", "Siding", "Siding built for High Desert weather",
      "Fiber cement, vinyl and wood — installed to manufacturer spec or repaired to blend invisibly. UV-proof thinking included.",
      [("Full re-sides & new construction siding", ""), ("Storm, UV & rot repairs", ""), ("Trim, soffit & fascia", "")],
-     "siding-house.webp", "House with fresh blue fiber cement siding and a new dark shingle roof", 1600, 1200),
+     "siding-house.webp", "Completed two-story home with dark lap siding by RGC", 1600, 1200),
     ("02", "Framing", "Framing that's square, plumb & permitted",
      "Additions, garages, ADUs, interior walls and structural repairs — engineered for Central Oregon snow loads.",
      [("Additions, ADUs & garages", ""), ("Interior walls & structural repairs", ""), ("Decks built for real snow loads", "")],
-     "framing-aerial.webp", "Aerial view of new wooden roof trusses on a residential build", 1220, 1101),
+     "framing-aerial.webp", "Home at framing stage with gable structure and stone columns", 1600, 1200),
     ("03", "Roofing Repairs", "Leaks found, fixed & documented",
      "We trace the water to its true entry point and repair it properly — and tell you honestly when a patch isn't enough.",
      [("Leak diagnosis & shingle replacement", ""), ("Flashing, valleys & vents", ""), ("Storm damage & insurance documentation", "")],
-     "roofing-worker.webp", "Roofer securing panels with a hammer under a warm sky", 1024, 681),
+     "roofing-worker.webp", "Roof deck with battens and panels during an active reroof", 1600, 2133),
     ("04", "Demolition", "Safe, permitted teardowns",
      "Sheds, decks, interiors and full structures — with permits, utility disconnects and haul-off in one number.",
      [("Selective & full demolition", ""), ("Permits & utility coordination", ""), ("Debris hauling included", "")],
-     "demolition-excavator.webp", "Excavator tearing down an old residential structure", 1024, 681),
+     "demolition-excavator.webp", "Interior gut-out with debris staged for haul-off", 1600, 2133),
     ("05", "Junk Removal", "Point at it. It's gone.",
      "Garages, yards, appliances, cleanouts and construction debris — loaded, swept and hauled same week.",
      [("Household & yard debris", ""), ("Appliances & e-waste recycled", ""), ("Estate & rental cleanouts", "")],
-     "craft-hands.webp", "Gloved crew member lifting debris by hand — we do the heavy lifting", 960, 540),
+     "crew-hivis.webp", "RGC trailer on site — hauling and cleanouts", 1600, 1200),
 ]
 
 for i, (num, name, heading, blurb, checks, img, alt_txt, w, h) in enumerate(svc_blocks):
@@ -833,19 +833,25 @@ services_graph = [
 # -------------------------------------------------------------- GALLERY ----
 
 GALLERY_ITEMS = [
-    ("siding", "Fiber cement re-side, full elevation", "siding-house.webp", "House with freshly installed blue fiber cement siding and new dark shingle roof", 1600, 1200),
-    ("siding", "Crisp corners & trim detail", "siding-detail.webp", "Close-up of new fiber cement siding and corner trim on a finished wall", 920, 780),
-    ("framing", "Roof frame set, braced & true", "hero-framing.webp", "Aerial view of a full residential roof framed with wooden trusses", 1920, 1440),
-    ("framing", "Trusses up close", "framing-aerial.webp", "Aerial close-up of new roof trusses against the sky", 1220, 1101),
-    ("roofing", "Panel roof installation", "roofing-worker.webp", "Roofer fastening metal roofing panels with a hammer", 1024, 681),
-    ("crew", "Tools of the trade, ready at dawn", "tools-hammer.webp", "Contractor's hammer and nails laid out on a workbench", 960, 641),
-    ("demolition", "Structure teardown, step by step", "demolition-excavator.webp", "Excavator demolishing an old residential structure", 1024, 681),
-    ("demolition", "Site cleared & sorted for disposal", "demolition-site.webp", "Excavator working through sorted rubble on a demolition site", 1024, 681),
-    ("junk", "Heavy lifting included", "craft-hands.webp", "Gloved crew member lifting debris by hand during a cleanout", 960, 540),
-    ("crew", "RGC crew on site", "crew-hivis.webp", "Construction crew in high-visibility vests working together", 1024, 681),
+    ("siding", "Completed re-side, two-story", "siding-house.webp", "Completed two-story home with dark lap siding and fresh gutters", 1600, 1200),
+    ("siding", "Gable corner, stone & timber", "framing-timber.webp", "Siding gable corner with stone column and timber accents", 1200, 1600),
+    ("siding", "Dark lap siding corner detail", "craft-hands.webp", "Close-up of dark lap siding corner and trim detail", 1200, 1600),
+    ("siding", "Modern panel cladding", "tools-hammer.webp", "Modern cream panel cladding with black metal accents", 1200, 1600),
+    ("framing", "Roof structure framed & braced", "framing-aerial.webp", "Residential build at framing stage with gable roof structure", 1600, 1200),
+    ("framing", "Second story, framed", "framing-vert.webp", "Two-story home framed with lumber staged on site", 1200, 899),
+    ("roofing", "Reroof in progress", "roofing-worker.webp", "Roof deck with battens and panels staged during a reroof", 1600, 2133),
+    ("demolition", "Interior gut-out & haul-off", "demolition-excavator.webp", "Interior gut-out with framing exposed and debris staged", 1600, 2133),
+    ("junk", "RGC trailer on site", "crew-hivis.webp", "RGC trailer parked on a Central Oregon job site", 1600, 1200),
+    ("projects", "Modern home & fire-pit patio", "project-patio.webp", "Completed modern home with paved patio and fire pit", 1600, 1200),
+    ("projects", "Farmhouse build, finished", "project-farmhouse.webp", "Completed white farmhouse-style home with covered porch", 1600, 1200),
+    ("projects", "Garage & entry, finished", "project-garage.webp", "Completed modern home with garage and wood accent entry", 1600, 1200),
+    ("projects", "Craftsman exterior, finished", "project-craftsman.webp", "Completed craftsman home with stone and cedar details", 1600, 1200),
+    ("projects", "Dark modern facade", "modern-dark.webp", "Dark modern cladding facade against the sky", 1200, 1600),
+    ("siding", "Porch & cedar columns tour", "videos/siding-tour.mp4", "Walking tour of a cedar column porch with fresh siding", None, None),
+    ("projects", "Interior finish walkthrough", "videos/interior-tour.mp4", "Walking tour of a finished interior with wood floors", None, None),
 ]
 
-CATS = [("all", "All work"), ("siding", "Siding"), ("framing", "Framing"), ("roofing", "Roofing"), ("demolition", "Demolition"), ("junk", "Junk Removal"), ("crew", "Our Crew")]
+CATS = [("all", "All work"), ("siding", "Siding"), ("framing", "Framing"), ("roofing", "Roofing"), ("demolition", "Demolition"), ("junk", "Junk Removal"), ("projects", "Finished Projects")]
 
 gallery_main = """    <section class="page-hero">
       <div class="container page-hero__inner">
@@ -864,11 +870,20 @@ for key, label in CATS:
 gallery_main += """        </div>
         <div class="gallery-grid" id="gallery-grid">
 """
-for cat, cap, img, alt, w, h in GALLERY_ITEMS:
-    thumb = img.replace(".webp", "-640.webp") if w > 700 else img
-    gallery_main += f"""          <button class="gitem" type="button" data-cat="{cat}" data-caption="{cap}" data-full="/img/photos/{img}">
+CAT_LABELS = dict((k, l) for k, l in CATS)
+for cat, cap, path, alt, w, h in GALLERY_ITEMS:
+    if path.endswith(".mp4"):
+        gallery_main += f"""          <button class="gitem" type="button" data-cat="{cat}" data-caption="{cap}" data-video="/{path}">
+            <video src="/{path}" muted playsinline preload="metadata" tabindex="-1"></video>
+            <span class="play-badge" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+            <figcaption>{cap} <span class="tag">Video · {CAT_LABELS[cat]}</span></figcaption>
+          </button>
+"""
+    else:
+        thumb = path.replace(".webp", "-640.webp") if w > 700 else path
+        gallery_main += f"""          <button class="gitem" type="button" data-cat="{cat}" data-caption="{cap}" data-full="/img/photos/{path}">
             <img src="/img/photos/{thumb}" alt="{alt}" loading="lazy" width="680" height="510">
-            <figcaption>{cap} <span class="tag">{dict((k, l) for k, l in CATS)[cat]}</span></figcaption>
+            <figcaption>{cap} <span class="tag">{CAT_LABELS[cat]}</span></figcaption>
           </button>
 """
 gallery_main += """        </div>
@@ -876,10 +891,11 @@ gallery_main += """        </div>
       </div>
     </section>
 
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
       <button class="lightbox__btn lightbox__close" aria-label="Close viewer">×</button>
       <button class="lightbox__btn lightbox__prev" aria-label="Previous image">←</button>
       <img src="" alt="">
+      <video class="lightbox__video" controls playsinline preload="metadata"></video>
       <p class="lightbox__cap"></p>
       <button class="lightbox__btn lightbox__next" aria-label="Next image">→</button>
     </div>
