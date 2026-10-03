@@ -198,11 +198,11 @@ def page(title, desc, canonical_path, active, main, jsonld, robots="index, follo
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=13">
+  <link rel="stylesheet" href="/css/styles.css?v=14">
   <script type="application/ld+json">
 {json.dumps(jsonld, indent=2, ensure_ascii=False)}
   </script>
-  <script src="/js/main.js?v=13" defer></script>
+  <script src="/js/main.js?v=14" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -512,7 +512,7 @@ SERVICES_DATA = [
             ("Vent & boot replacement", "Crumbed pipe boots and failed vents — cheap to fix, costly to ignore."),
         ],
         "local": "Freeze-thaw cycles open every hairline crack, and High Desert UV cooks the oils out of shingles years faster than the label promises. If your roof is past 15 summers, an annual look-over pays for itself.",
-        "photo2": {"img": "roofing-detail.webp", "alt": "Detail of roof battens and underlayment ready for panels", "w": 1200, "h": 1600},
+        "photo2": {"img": "roofing-stock.webp", "alt": "Roofer installing metal panels on a residential roof", "w": 1200, "h": 800},
         "why": [
             ("We find the real leak", "Water travels — we inspect the whole path, not just the stain."),
             ("Repair-first philosophy", "If a $600 repair buys you five more years, that's what we'll recommend."),
@@ -551,7 +551,7 @@ SERVICES_DATA = [
             ("Site prep for the rebuild", "Backfilled, graded and swept — ready for framing or landscaping."),
         ],
         "local": "Older Central Oregon properties often hide surprises: buried fuel oil tanks, unpermitted additions, asbestos-era materials. We flag those risks during the estimate so there are no mid-demo cost bombs.",
-        "photo2": {"img": "demolition-site.webp", "alt": "Demolition debris separated and staged for disposal on site", "w": 1200, "h": 1600},
+        "photo2": {"img": "demolition-stock.webp", "alt": "Excavator tearing down an old residential structure", "w": 1200, "h": 800},
         "why": [
             ("Licensed & insured demolition", "This is not a Craigslist crew with a sledgehammer — permits, insurance and process."),
             ("One quote, haul-off included", "No separate dumpster bills, no debris left 'for later'."),
