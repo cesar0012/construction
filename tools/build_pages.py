@@ -198,11 +198,11 @@ def page(title, desc, canonical_path, active, main, jsonld, robots="index, follo
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=7">
+  <link rel="stylesheet" href="/css/styles.css?v=8">
   <script type="application/ld+json">
 {json.dumps(jsonld, indent=2, ensure_ascii=False)}
   </script>
-  <script src="/js/main.js?v=7" defer></script>
+  <script src="/js/main.js?v=8" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
