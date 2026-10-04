@@ -110,7 +110,7 @@ FOOTER = """  <footer class="site-footer">
       <div class="footer__grid">
         <div class="footer__brand">
           <img src="/img/logo-wide.png" alt="RGC — Roque General Construction LLC" loading="lazy" width="200" height="150">
-          <p>One crew for siding, framing, roofing repairs, demolition and junk removal. Licensed, bonded &amp; insured — proud to call Central Oregon home. <em>Se habla español.</em></p>
+          <p>One crew for siding, framing, roofing repairs, demolition and junk removal — proudly serving Central Oregon. <em>Se habla español.</em></p>
         </div>
         <div class="footer__col">
           <h4>Explore</h4>
