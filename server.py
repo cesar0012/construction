@@ -15,7 +15,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DEMO = os.environ.get("DEMO", "0") == "1"
-CANONICAL_HOST = os.environ.get("CANONICAL_HOST", "")  # p. ej. "www.roquegeneralconstruction.com"
+CANONICAL_HOST = os.environ.get("CANONICAL_HOST", "")  # p. ej. "www.roquegeneral.com"
 
 # Ruta limpia -> archivo
 ROUTES = {

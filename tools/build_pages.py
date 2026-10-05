@@ -9,7 +9,7 @@ import json
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = "https://roquegeneralconstruction.com"
+BASE = "https://roquegeneral.com"
 
 # ----------------------------------------------------------------------------
 # Bloques compartidos

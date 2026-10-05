@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /tools/
 
-Sitemap: https://roquegeneralconstruction.com/sitemap.xml
+Sitemap: https://roquegeneral.com/sitemap.xml
