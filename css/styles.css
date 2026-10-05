@@ -364,7 +364,7 @@ body.nav-open .nav-toggle span::after{top:0;transform:rotate(-45deg)}
 
 /* ---------- 9. Trustbar ---------- */
 .trustbar{background:var(--ink-2);border-block:1px solid var(--line-dark)}
-.trustbar__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:1.35rem 0}
+.trustbar__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:1.35rem 0}
 .trust{display:flex;align-items:center;gap:.85rem}
 .trust__icon{
   flex:none;width:52px;height:52px;border-radius:12px;display:grid;place-items:center;
