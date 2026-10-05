@@ -14,7 +14,7 @@ Sitio estático (HTML/CSS/JS vanilla + `server.py`) para **Roque General Constru
 | # | Pendiente | Dónde |
 |---|-----------|-------|
 | 1 | **Número de licencia CCB** (la tarjeta traía placeholder `000000`). El sitio muestra "Oregon CCB" **sin número** en toda la UI y sin `identifier` en el JSON-LD. Cuando el cliente dé el número real: buscar `Oregon CCB` en los HTML y añadir `identifier` al JSON-LD del home. | grep `CCB` |
-| 2 | **Dominio placeholder `roquegeneral.com`**. Reemplazar en canonicals, OG, JSON-LD, sitemap y robots cuando se confirme el dominio real. | grep `roquegeneral.com` + `sitemap.xml` + `robots.txt` |
+| 2 | ~~Dominio~~ **RESUELTO**: dominio real `roquegeneral.com` aplicado en canonicals, OG, JSON-LD, sitemap y robots (v2.0). | — |
 | 3 | **Formulario**: usa FormSubmit hacia `marioroque@yahoo.com`. **El primer envío real genera un correo de activación de FormSubmit** — hay que hacer clic una sola vez para habilitar la entrega. Ver "Formulario" abajo. | `contact.html` |
 | 4 | **Facebook**: la tarjeta dice "VISIT US" con QR a Facebook. Enlazar la URL real de la página cuando el cliente la confirme (se puede añadir a `sameAs` del JSON-LD). | — |
 | 5 | **Testimonios de ejemplo** (Sarah M./Diego R./Kelli T.) — reemplazar por reseñas reales del cliente cuando las tenga. No marcar con schema Review hasta que sean reales. | `index.html` |
